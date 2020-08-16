@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devic-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/menu.css">
+    <title>标签</title>
+</head>
+<body>
+<!--    导航-->
+    <nav class="ui inverted attached segment m-padded-tb-mini">
+        <div class="container">
+            <div class="ui inverted secondary menu stackable">
+                <h2 class="ui teal header item">再花の博客</h2>
+                <a href="#" class="item m-item m-mobile-hide"><i class=" home icon"></i>首页</a>
+                <a href="#" class="item m-item m-mobile-hide"><i class=" idea icon"></i>分类</a>
+                <a href="#" class="item m-item m-mobile-hide active"><i class=" tags icon"></i>标签</a>
+                <a href="#" class="item m-item m-mobile-hide"><i class=" clone icon"></i>归档</a>
+                <a href="#" class="item m-item m-mobile-hide"><i class=" info icon"></i>关于我</a>
+                <div class="right item m-item m-mobile-hide">
+                    <div class="ui icon inverted transparent input">
+                        <input type="text" placeholder="Search...">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui menu toggle icon black button m-top-right m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+
+<!--中间内容-->
+    <div class="m-container-small m-padded-tb-large">
+        <div class="ui container">
+            <div class="ui top attached segment">
+                <div class="ui middle aligned two column grid">
+                    <div class="column">
+                        <h2 class="ui teal header">分类</h2>
+                    </div>
+                    <div class="right aligned column ">
+                        共<h2 class="ui orange header m-inline-block m-text-thin">6</h2>个
+                    </div>
+                </div>
+            </div>
+            <div class="ui segments m-margin-top">
+                <div class="ui secondary segment">
+                    <div class="ui two column grid">
+                        <div class="column">
+                            <i class="tags icon"></i>标签
+                        </div>
+                        <div class="column right aligned">
+                            <a href="#" target="_blank">MORE <i class="angle double right icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui teal segment">
+                    <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-mini">
+                        JAVA
+                        <div class="detail">1</div>
+                    </a>
+                    <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-mini">
+                        DNF
+                        <div class="detail">2</div>
+                    </a>
+                    <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-mini">
+                        SpringBoot
+                        <div class="detail">3</div>
+                    </a>
+                    <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-mini">
+                        Hyper Scape
+                        <div class="detail">4</div>
+                    </a>
+                    <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-mini">
+                        MySQL
+                        <div class="detail">5</div>
+                    </a>
+                    <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-mini">
+                        Photos
+                        <div class="detail">6</div>
+                    </a>
+                </div>
+            </div>
+            <div class="ui teal segment">
+                <div class="ui segment m-padded-tb-big vertical">
+                    <div class="ui grid">
+                        <!--                                    左-->
+                        <div class="eleven wide column ">
+                            <h3 class="ui header m-inline-block">再花的第一篇博客</h3>
+                            <p class="m-text">测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</p>
+                            <div class="ui grid">
+                                <div class="eleven wide column">
+                                    <div class="ui horizontal link list">
+                                        <div class="item">
+                                            <img src="../static/images/HEAD.jpg" width="100px" height="100px" class="ui avatar image">
+                                            <div class="content"><a href="#" class="header m-text-thin">再花</a></div>
+                                        </div>
+                                        <div class="item">
+                                            <i class="calendar icon"></i> 2020.7.16
+                                        </div>
+                                        <div class="item">
+                                            <i class="eye icon"></i>520
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <br><div class="ui teal basic left pointing label">编程</div>
+                                    </div>
+                                </div>
+                                <div class="five wide column right aligned">
+                                    <a href="#" target="_blank" class="ui teal basic label">认知升级</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--                                    右-->
+                        <div class="five wide column">
+                            <a href="#" target="_blank">
+                                <img src="../static/images/IMG1.jpg" width="192px" height="108px" alt="" class="ui rounded">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--    底部-->
+    <footer class="ui inverted vertical segment m-padded-tb-massive">
+        <div class="ui center aligned container">
+            <div class="ui inverted divided grid stackable">
+                <div class="four wide column">
+                    <div class="ui inverted link list">
+                        <img src="../static/images/VX.png" class=" ui rounded image middle aligned" alt="" style="width: 100px" th:src="@{/images/VX.png}">
+                    </div>
+                </div>
+                <div class="four wide column m-text-spaced">
+                    <h4 class="ui inverted header m-text-thin">最新博客</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">测试</a>
+                        <a href="#" class="item">测试</a>
+                    </div>
+                </div>
+                <div class="four wide column m-text-spaced">
+                    <h4 class="ui inverted header m-text-thin">联系我</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">邮箱：ZyZy1724@gmail.com</a>
+                        <a href="#" class="item">QQ:446840401</a>
+                    </div>
+                </div>
+                <div class="four wide column m-text-spaced">
+                    <h4 class="ui inverted header">再花</h4>
+                    <p class="n-opacity-mini">自我介绍</p>
+                </div>
+            </div>
+<!--            分割线-->
+            <div class="ui inverted section divider">
+                <p class="m-text-thin m-text-spaced n-opacity-mini">ZFFFLower</p>
+            </div>
+        </div>
+    </footer>
+
+<script type="text/javascript" color="0,0,255" opacity='0.8' zIndex="-2" count="199" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+<script>
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    })
+</script>
+</body>
+</html>

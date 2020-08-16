@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:fragment="head(title)">
+    <title th:replace="${title}"></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devic-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/menu.css" th:href="@{/css/menu.css}">
+    <link rel="stylesheet" href="../static/css/typo.css" th:href="@{/css/typo.css}">
+    <link rel="stylesheet" href="../static/lib/prism/prism.css" th:href="@{/css/prism.css}">
+
+</head>
+<body>
+<footer th:fragment="footer" class="ui inverted vertical segment m-padded-tb-massive">
+    <div class="ui center aligned container">
+        <div class="ui inverted divided grid stackable">
+            <div class="four wide column">
+                <div class="ui inverted link list">
+                    <img src="../static/images/VX.png" class=" ui rounded image middle aligned" alt="" style="width: 100px" th:src="@{/images/VX.png}">
+                </div>
+            </div>
+            <div class="four wide column m-text-spaced">
+                <h4 class="ui inverted header m-text-thin">最新博客</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">测试</a>
+                    <a href="#" class="item">测试</a>
+                </div>
+            </div>
+            <div class="four wide column m-text-spaced">
+                <h4 class="ui inverted header m-text-thin">联系我</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">邮箱：ZyZy1724@gmail.com</a>
+                    <a href="#" class="item">QQ:446840401</a>
+                </div>
+            </div>
+            <div class="four wide column m-text-spaced">
+                <h4 class="ui inverted header">再花</h4>
+                <p class="n-opacity-mini">自我介绍</p>
+            </div>
+        </div>
+        <!--            分割线-->
+        <div class="ui inverted section divider">
+            <p class="m-text-thin m-text-spaced n-opacity-mini">ZFFFLower</p>
+        </div>
+    </div>
+</footer>
+<th:block th:fragment="script">
+    <script type="text/javascript" color="0,0,255" opacity='0.8' zIndex="-2" count="199" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+    <srcpit src="./static/lib/prism/prism.js" th:src="@{/js/prism.js}" ></srcpit>
+</th:block>
+</body>
+
+</html>

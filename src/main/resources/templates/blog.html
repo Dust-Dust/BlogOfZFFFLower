@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devic-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/menu.css">
+    <link rel="stylesheet" href="../static/css/typo.css">
+    <link rel="stylesheet" href="../static/css/animate.min.css">
+    <link rel="stylesheet" href="../static/lib/prism/prism.css">
+    <title>博客</title>
+</head>
+<body>
+<!--    导航-->
+    <nav class="ui inverted attached segment m-padded-tb-mini">
+        <div class="container">
+            <div class="ui inverted secondary menu stackable">
+                <h2 class="ui teal header item">再花の博客</h2>
+                <a href="#" class="item m-item m-mobile-hide"><i class=" home icon"></i>首页</a>
+                <a href="#" class="item m-item m-mobile-hide"><i class=" idea icon"></i>分类</a>
+                <a href="#" class="item m-item m-mobile-hide"><i class=" tags icon"></i>标签</a>
+                <a href="#" class="item m-item m-mobile-hide"><i class=" clone icon"></i>归档</a>
+                <a href="#" class="item m-item m-mobile-hide"><i class=" info icon"></i>关于我</a>
+                <div class="right item m-item m-mobile-hide">
+                    <div class="ui icon inverted transparent input">
+                        <input type="text" placeholder="Search...">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui menu toggle icon black button m-top-right m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+
+<!--中间内容-->
+    <div class="m-container-small m-padded-tb-large">
+        <div class="ui contianer">
+            <div class="ui top attached segment">
+                <div class="ui horizontal link list">
+                    <div class="item">
+                        <img src="../static/images/HEAD.jpg" width="100px" height="100px" class="ui avatar image">
+                        <div class="content"><a href="#" class="header m-text-thin">再花</a></div>
+                    </div>
+                    <div class="item">
+                        <i class="calendar icon"></i> 2020.7.16
+                    </div>
+                    <div class="item">
+                        <i class="eye icon"></i>520
+                    </div>
+                </div>
+            </div>
+            <div class="ui attached segment">
+                <img src="../static/images/IMG1.jpg" alt="" class="ui fluid rounded image" style="width: 820px">
+            </div>
+            <div class="ui attached segment">
+                <div class="ui segment left aligned basic segment">
+                    <div class="ui orange basic label">原创</div>
+                    <h2 class="ui header center aligned">基于Java与web模式的教务管理系统的设计与实现</h2>
+                    <div id="content" class="m-padded-lr m-padded-tb-large m-padded-tb-lr-responsive typo typo-selection">
+                        <h1>中文网页重设与排版：<i class="serif">Typo.css</i></h1><br/>
+
+                        <h2 id="tagline" class="serif">一致化浏览器排版效果，构建最适合中文阅读的网页排版</h2>
+
+                        <ol id="table">
+                            <li><a href="#section1">关于 <i class="serif">Typo.css</i></a></li>
+                            <li><a href="#section2">排版实例</a>
+                                <ul>
+                                    <li><a href="#section2-1">例1：论语学而篇第一</a></li>
+                                    <li><a href="#section2-2">例2：英文排版</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#section3">附录</a>
+                                <ul>
+                                    <li><a href="#appendix1"><i class="serif">Typo.css</i> 排版偏重点</a></li>
+                                    <li><a href="#appendix2">开源许可</a></li>
+                                </ul>
+                            </li>
+                        </ol>
+
+                        <h2 id="section1">一、关于 <i class="serif">Typo.css</i></h2>
+
+                        <p><i class="serif">Typo.css</i> 的目的是，在一致化浏览器排版效果的同时，构建最适合中文阅读的网页排版。</p>
+                        <h4>现状和如何去做：</h4>
+
+                        <p class="typo-first">排版是一个麻烦的问题 <sup><a href="#appendix1"># 附录一</a></sup>，需要精心设计，而这个设计却是常被视觉设计师所忽略的。前端工程师更常看到这样的问题，但不便变更。因为在多个 OS 中的不同浏览器渲染不同，改动需要多的时间做回归测试，所以改变变得更困难。而像我们一般使用的
+                            Yahoo、Eric Meyer 和 Alice base.css 中采用的 Reset 都没有很好地考虑中文排版。<i class="serif">Typo.css</i> 要做的就是解决中文排版的问题。</p>
+
+                        <p><strong><i class="serif">Typo.css</i> 测试于如下平台：</strong></p>
+                        <table summary="Typo.css 的测试平台列表">
+                            <thead>
+                            <tr>
+                                <th>OS/浏览器</th>
+                                <th>Firefox</th>
+                                <th>Chrome</th>
+                                <th>Safari</th>
+                                <th>Opera</th>
+                                <th>IE9</th>
+                                <th>IE8</th>
+                                <th>IE7</th>
+                                <th>IE6</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>OS X</td>
+                                <td>✔</td>
+                                <td>✔</td>
+                                <td>✔</td>
+                                <td>✔</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>Win 7</td>
+                                <td>✔</td>
+                                <td>✔</td>
+                                <td>✔</td>
+                                <td>✔</td>
+                                <td>✔</td>
+                                <td>✔</td>
+                                <td>✔</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>Win XP</td>
+                                <td>✔</td>
+                                <td>✔</td>
+                                <td>✔</td>
+                                <td>✔</td>
+                                <td>-</td>
+                                <td>✔</td>
+                                <td>✔</td>
+                                <td>✔</td>
+                            </tr>
+                            <tr>
+                                <td>Ubuntu</td>
+                                <td>✔</td>
+                                <td>✔</td>
+                                <td>-</td>
+                                <td>✔</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!--            标签-->
+                <div class="m-padded-lr m-padded-tb-lr-responsive">
+                    <div class="ui basic teal left pointing label ">
+                        编程
+                    </div>
+                </div>
+            </div>
+            <div class="ui attached positive message">
+                <div class="ui grid middle aligned">
+                    <div class="eight wide column m-text-spaced">
+                            <li>作者：再花</li>
+                            <li>发表时间：2020.7.16</li>
+                            <li>版权声明：自由转载-非商用-非衍生-保持署名</li>
+                    </div>
+                </div>
+            </div>
+            <div class="ui bottom attached segment">
+<!--                留言区域列表-->
+                <div class="ui teal segment">
+                    <div class="ui comments">
+                        <h3 class="ui dividing header">Comments</h3>
+                        <div class="comment">
+                            <a class="avatar">
+                            </a>
+                            <div class="content">
+                                <a class="author">Matt</a>
+                                <div class="metadata">
+                                    <span class="date">今天下午 5:42</span>
+                                </div>
+                                <div class="text">你好</div>
+                                <div class="actions">
+                                    <a class="reply">回复</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <a class="avatar">
+                            </a>
+                            <div class="content">
+                                <a class="author">Elliot Fu</a>
+                                <div class="metadata">
+                                    <span class="date">昨天上午12:30</span>
+                                </div>
+                                <div class="text">
+                                    <p>你好</p>
+                                </div>
+                                <div class="actions">
+                                    <a class="reply">回复</a>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <div class="comment">
+                                    <a class="avatar">
+                                    </a>
+                                    <div class="content">
+                                        <a class="author">Jenny Hess</a>
+                                        <div class="metadata">
+                                            <span class="date">刚刚</span>
+                                        </div>
+                                        <div class="text">你好</div>
+                                        <div class="actions">
+                                            <a class="reply">回复</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <a class="avatar">
+                            </a>
+                            <div class="content">
+                                <a class="author">Joe Henderson</a>
+                                <div class="metadata">
+                                    <span class="date">5 天以前</span>
+                                </div>
+                                <div class="text">你好</div>
+                                <div class="actions">
+                                    <a class="reply">回复</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui form">
+                    <div class="field">
+                        <textarea name="content" placeholder="请输入评论内容..."></textarea>
+                    </div>
+                    <div class="fields">
+                        <div class="field" style="width: 300px">
+                            <div class="ui left icon input">
+                                <i class="user icon"></i>
+                                <input type="text" name="nickname" placeholder="名称">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <button class="ui teal button"><i class="edit icon"></i>发布</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div id="top" class="m-fixed m-right-bottom" >
+    <div class="ui icon button">
+        <div id="toTop-button" class="ui icon button"><i class="icon chevron up"></i></div>
+    </div>
+</div>
+<!--    底部-->
+    <footer class="ui inverted vertical segment m-padded-tb-massive">
+        <div class="ui center aligned container">
+            <div class="ui inverted divided grid stackable">
+                <div class="four wide column">
+                    <div class="ui inverted link list">
+                        <img src="../static/images/VX.png" class=" ui rounded image middle aligned" alt="" style="width: 100px" th:src="@{/images/VX.png}">
+                    </div>
+                </div>
+                <div class="four wide column m-text-spaced">
+                    <h4 class="ui inverted header m-text-thin">最新博客</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">测试</a>
+                        <a href="#" class="item">测试</a>
+                    </div>
+                </div>
+                <div class="four wide column m-text-spaced">
+                    <h4 class="ui inverted header m-text-thin">联系我</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">邮箱：ZyZy1724@gmail.com</a>
+                        <a href="#" class="item">QQ:446840401</a>
+                    </div>
+                </div>
+                <div class="four wide column m-text-spaced">
+                    <h4 class="ui inverted header">再花</h4>
+                    <p class="n-opacity-mini">自我介绍</p>
+                </div>
+            </div>
+<!--            分割线-->
+            <div class="ui inverted section divider">
+                <p class="m-text-thin m-text-spaced n-opacity-mini">ZFFFLower</p>
+            </div>
+        </div>
+    </footer>
+
+<script type="text/javascript" color="0,0,255" opacity='0.8' zIndex="-2" count="199" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+<srcpit src="./static/lib/prism/prism.js"></srcpit>
+
+<script>
+
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    })
+
+    $('#toTop-button').click(function () {
+        $(window).scrollTo(0,1000);
+    })
+
+
+</script>
+</body>
+</html>
